@@ -1,0 +1,349 @@
+@import "http://webfonts.ru/import/lato.css";
+@import "http://webfonts.ru/import/roboto.css";
+
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+
+body {
+	font: 12px "Lato","Open Sans",sans-serif;
+	background: #f7f7f7;
+	color: #363937;
+}
+a {
+	text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,ul,ol {
+	margin: 0px;
+	padding: 0px;
+}
+
+ul {
+	list-style: none;
+}
+
+.border-bottom, .nav__link, .header__h1, .author__h2, .course__h2 {
+	position: relative;
+}
+
+.border-bottom:after, .nav__link:hover:after, .header__h1:after, .author__h2:after, .course__h2:after {
+	content: "";
+	display: block;
+	width: 95px;
+	height: 2px;
+	background: #363937;
+	position: absolute;
+	bottom: 0px;
+	margin-left: -47.5px;
+	left: 50%;
+}
+
+/* header */
+.header {
+	height: 740px;
+	background: #29b4ab;
+	padding-top: 15px;
+}
+
+.header__inner {
+	width: 1170px;
+	height: 725px;
+	margin: 0 auto;
+	background: url(../img/header.png) no-repeat 623px 135px;
+}
+
+.header__top {
+	position: relative;
+	min-height: 100px;
+	overflow: hidden;
+	margin-bottom: 195px;
+}
+
+.header__block {
+	width: 235px;
+	height: 100px;
+}
+
+.header__logo {
+	background: url(../img/logo.png) no-repeat;
+	width: 105px;
+	height: 77px;
+}
+
+.school, .legion { 
+	display: inline-block; 
+	background: url('../img/logo.png') no-repeat; 
+	overflow: hidden; 
+	text-indent: -9999px; 
+	text-align: left; 
+	height: 77px;
+	width: 105px; 
+}
+.school { 
+	background-position: -5px -0px; 
+	margin-right: 30px;
+}
+
+.legion { 
+	background-position: -5px -82px; width: 95px;  
+}
+
+.nav {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	margin-top: 45px;
+}
+
+.nav__item {
+	float: left;
+}
+
+.nav__link {
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	padding-bottom: 11px;
+	display: block;
+	margin: 0 20px;
+	letter-spacing: 3px;
+}
+
+.nav__link:hover:after {
+	content: "";
+	margin-left: 0px;
+	height: 4px;
+	background: #fff;
+	width: 100%;
+	left: 0px;
+}
+
+.header__promotion {
+	max-width: 700px;
+	min-height: 250px;
+}
+
+.header__h1 {
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 8px;
+	line-height: 42px;
+	padding-bottom: 50px;
+	margin-bottom: 40px;
+}
+
+.header__h1:after {
+	content: "";
+	background-color: #fff;
+}
+
+.header__p {
+	font-size: 20px;
+	font-weight: 300;
+	color: #fff;
+	text-align: center;
+	max-width: 470px;
+	margin: 0 auto;
+}
+
+/* content */
+.content {
+	padding-top: 80px;
+	min-height: 830px;
+	padding-bottom: 55px;
+}
+
+.content__inner {
+	width: 970px;
+	margin: 0 auto;
+}
+
+.content__item {
+	padding-left: 160px;
+	margin-bottom: 80px;
+	position: relative;
+}
+
+.content__item:before {
+	content: "";
+	position: absolute;
+	left: 0px;
+	display: block;
+	width: 115px;
+	height: 115px;
+	background: url(../img/person.png) no-repeat;
+}
+
+.content__item--pen:before {
+	content: "";
+	background: url(../img/pen.png);
+}
+.content__h2 {
+	font-size: 20px;
+	font-weight: normal;
+	margin-bottom: 50px;
+}
+
+.content__p, .author__p {
+	font: 300 20px "Roboto";
+	line-height: 30px;
+	margin: 0px;
+}
+
+.content__p--indent {
+	text-indent: 30px;
+}
+
+.content__loftblog {
+	background: url(../img/loftblog.png) no-repeat;
+	width: 200px;
+	height: 170px;
+	position: relative;
+	word-wrap: break-word;
+	padding: 15px;
+	margin-right: 185px;
+	display: inline-block;
+}
+
+.content__loftblog:last-child {
+	margin-right: 0px;
+}
+
+.content__loftblog span {
+	font: 500 20px "Roboto";
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	position: absolute;
+	top: 110px;
+	left: 60px;
+}
+
+.content__loftblog:last-child:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* author */
+.author {
+	min-height: 727px;
+	background: #dadfe6;
+	border-top: 1px solid transparent;
+}
+
+.author__inner {
+	max-width: 620px;
+	margin: 0 auto;
+	margin-top: 105px;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 75px;
+}
+
+.author__logo {
+	width: 281px;
+	height: 281px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.author__h3,.author__h2 {
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.author__h2 {
+	font-size: 25px;
+	padding-bottom: 30px;
+}
+
+.author__p {
+	text-align: center;
+}
+
+.author__p--one {
+	margin-bottom: 28px;
+}
+
+.author__p--legeon {
+	margin-bottom: 50px;
+}
+
+.author__social {
+	background: url(../img/vk.png) no-repeat;
+	display: block;
+	width: 47px;
+	height: 29px;
+	margin: 0 auto;
+}
+
+/* course */
+.course {
+	background: #e7f1f8;
+	min-height: 540px;
+	padding-top: 100px;
+}
+
+.course__inner {
+	width: 1170px;
+	margin: 0 auto;
+	padding-bottom: 125px;
+}
+
+.course__h2 {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	padding-bottom: 35px;
+	margin-bottom: 55px;
+}
+
+.course__item {
+	max-width: 184px;
+	min-height: 134px;
+	margin-right: 64px;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 127px;
+}
+
+.course__item:nth-child(5), .course__item:nth-child(10) {
+	margin-right: 0px;
+}
+
+.course__circle {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	font-size: 30px;
+	font-weight: bold;
+	color: #bd282f;
+	border: 2px solid #bd282f;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 50px;
+	margin-bottom: 40px;
+}
+
+.course__p {
+	max-width: 170px;
+	font: 300 20px "Roboto";
+	text-align: center;
+	line-height: 28px;
+}
